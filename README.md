@@ -1,15 +1,48 @@
 # E-Scrap
 Sell your scrap products with few clicks
 
-Escrap is a mobile application that allows users to sell their old scrap products to others who can make use of them. The application is designed to make it easy for users to connect with others who are interested in buying their scrap products, helping to reduce waste and promote a more sustainable way of living.
+# Escrap App
 
-To use Escrap, users will first need to download the application onto their mobile device. Once they have downloaded the app, they can create an account and start listing their scrap products for sale. Users will need to provide a description of the product, along with any relevant details such as its condition, size, weight, and so on. They can also upload photos of the product to help potential buyers get a better idea of what they are purchasing.
+The Escrap app is a mobile application that allows users to sell their old scrap products to others who can make use of them. The application is designed to make it easy for users to connect with others who are interested in buying their scrap products, helping to reduce waste and promote a more sustainable way of living.
 
-When a buyer is interested in purchasing a product, they can contact the seller directly through the app to arrange payment and pick up or delivery. Escrap does not handle any transactions directly, but provides a platform for buyers and sellers to connect with each other and negotiate the terms of the sale.
+## Features
 
-In addition to helping users sell their old scrap products, Escrap also provides a number of resources and tools to help promote sustainability and reduce waste. The app includes a database of recycling facilities and other resources for disposing of unwanted items, as well as tips and advice for reducing waste and living a more sustainable lifestyle.
+- User-friendly interface for easy navigation
+- Ability to post scrap products for sale
+- Ability to browse and search for scrap products based on category and location
+- Ability to communicate with other users through in-app messaging
+- Option to rate and review buyers and sellers
 
-Overall, Escrap is an easy-to-use and convenient platform for users to sell their old scrap products and connect with others who are interested in reducing waste and promoting sustainability. By helping to keep usable items out of landfills and promoting the reuse of materials, Escrap is making a positive impact on the environment and helping to build a more sustainable future for everyone.
+## Getting Started
+
+To get started with the Escrap app, follow these steps:
+
+1. Clone the repository to your local machine.
+
+2. Open the project in Android Studio.
+
+3. Build and run the project to ensure that it is set up correctly.
+
+## How it Works
+
+The app works by allowing users to post their scrap products for sale, which can then be browsed and searched by other users based on category and location. Users can communicate with each other through in-app messaging to negotiate prices and arrange for pickup or delivery. The app also provides the option to rate and review buyers and sellers, helping to ensure a safe and trustworthy community of users.
+
+## Technologies Used
+
+The Escrap app was built using the following technologies:
+
+- Android Studio
+- Java
+- Firebase Realtime Database
+- Firebase Cloud Messaging
+- Rest API
+- Google Maps API
+
+## Conclusion
+
+The Escrap app provides a simple and convenient way for users to sell their old scrap products and connect with others who can make use of them. With its user-friendly interface, easy communication, and rating system, the app promotes a sustainable way of living and encourages the reuse of products that might otherwise go to waste.
+
+
 The application working steps are as following:
 
 <table>
