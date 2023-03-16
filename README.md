@@ -10,3 +10,34 @@ When a buyer is interested in purchasing a product, they can contact the seller 
 In addition to helping users sell their old scrap products, Escrap also provides a number of resources and tools to help promote sustainability and reduce waste. The app includes a database of recycling facilities and other resources for disposing of unwanted items, as well as tips and advice for reducing waste and living a more sustainable lifestyle.
 
 Overall, Escrap is an easy-to-use and convenient platform for users to sell their old scrap products and connect with others who are interested in reducing waste and promoting sustainability. By helping to keep usable items out of landfills and promoting the reuse of materials, Escrap is making a positive impact on the environment and helping to build a more sustainable future for everyone.
+The application working steps are as following:
+
+<table>
+  <tr>
+    <td>Login/Signup</td>
+     <td>Login</td>
+     <td>Signup</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/alishahbaz659/E-Scrap/blob/main/EScrap/Screenshots/2.png" width=50% height=50%></td>
+    <td><img src="https://github.com/alishahbaz659/E-Scrap/blob/main/EScrap/Screenshots/3.png" width=50% height=50%></td>
+    <td><img src="https://github.com/alishahbaz659/E-Scrap/blob/main/EScrap/Screenshots/9.png" width=50% height=50%></td>
+  </tr>
+ </table>
+ 
+ 
+ <table>
+  <tr>
+     <td>Apply Filters</td>
+     <td>Chat</td>
+  </tr>
+  <tr>
+   <td><img src="https://github.com/alishahbaz659/E-Scrap/blob/main/EScrap/Screenshots/6.png" width=50% height=50%></td>
+   <td><img src="https://github.com/alishahbaz659/E-Scrap/blob/main/EScrap/Screenshots/5.png" width=50% height=50%></td>
+  </tr>
+ </table>
+ 
+ 
+ 
+ 
+ 
