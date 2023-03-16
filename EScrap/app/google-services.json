@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "471446081002",
+    "firebase_url": "https://escrap-ea0b2-default-rtdb.firebaseio.com",
+    "project_id": "escrap-ea0b2",
+    "storage_bucket": "escrap-ea0b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471446081002:android:55b40597c83a935bb73693",
+        "android_client_info": {
+          "package_name": "com.jason.escrap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471446081002-3e5euk53venktkhgq7g1b5o07bu94abl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jason.escrap",
+            "certificate_hash": "8ecee67565df6162174dce203d10b43899563655"
+          }
+        },
+        {
+          "client_id": "471446081002-dv7c3jb9mtr77909vvvf5dvebu572nvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFWih67pEmCpd9Kir35LHxCkGCdAgYmZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471446081002-dv7c3jb9mtr77909vvvf5dvebu572nvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

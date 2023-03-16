@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/go_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="&#8592;"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_go_next"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_password_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_button_login"
+            android:text="CREATE"
+            android:textColor="#FFF"
+            android:textStyle="bold"></Button>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Create an account to E-Scrap to get all features"
+            android:textColor="#808080"
+            android:textSize="16dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Let's Get Started!"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/txt_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/already_have_an_account"
+            android:textColor="#808080"
+            android:textSize="16dp"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/name_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edt_userName"
+                android:layout_width="347dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/txt2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/password_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="347dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/confirm_password_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edt_confirm_password"
+                android:layout_width="347dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/email_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edt_userEmail"
+                android:layout_width="347dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/txt2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_markunread_24"
+                android:drawablePadding="10dp"
+                android:hint="abc@example.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_gmail_signin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_go_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            app:isDarkTheme="true"></com.google.android.gms.common.SignInButton>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_profile_image2" />
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/usercover" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_add_post"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+               android:layout_alignParentRight="true"
+                android:background="@drawable/add_post_bg"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="Add Post"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="Loading..."
+                android:paddingStart="25dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp" />
+
+            <LinearLayout
+               android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_profile_name"
+                >
+                <TextView
+                    android:id="@+id/user_product_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:paddingStart="25dp"
+                    android:text="Product Owner"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:paddingLeft="24dp" />
+                <TextView
+                    android:id="@+id/user_product_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:paddingStart="5dp"
+                    android:text=",Product Seller"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp" />
+                <TextView
+                    android:id="@+id/user_general"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:paddingStart="5dp"
+                    android:text=",General"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/user_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:paddingStart="25dp"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingLeft="24dp" />
+            <TextView
+                android:id="@+id/user_profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:paddingStart="25dp"
+                android:text="Loading"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingLeft="24dp" />
+
+            <TextView
+                android:id="@+id/txt_profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingStart="25dp"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:paddingLeft="24dp" />
+            <TextView
+                android:id="@+id/user_profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_profile_address"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:paddingStart="25dp"
+                android:text="Loading"
+                android:textColor="#000000"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:textSize="16sp"
+                android:drawablePadding="15dp"
+                android:paddingLeft="24dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24" />
+
+
+
+            <TextView
+                android:id="@+id/txt_profile_brief_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_address"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingStart="25dp"
+                android:text="Brief introduction"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:paddingLeft="24dp" />
+            <TextView
+                android:id="@+id/user_profile_brief_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_profile_brief_intro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:paddingStart="25dp"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:drawablePadding="15dp"
+                android:paddingLeft="25dp" />" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_posts_recycler_view"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/text_view_user_alphabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_accent"
+        android:gravity="center"
+        android:maxEms="1"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="a" />
+
+    <TextView
+        android:id="@+id/text_view_chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/incomine_message_buble_shape"
+        android:padding="8dp"
+        android:paddingEnd="20dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        tools:text="Hello mate ! " />
+
+    <TextView
+        android:id="@+id/text_view_chat_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_chat_message"
+        android:layout_marginEnd="@dimen/margin_huge"
+        android:layout_marginRight="@dimen/margin_huge"
+        android:padding="10dp"
+        android:paddingEnd="20dp"
+
+        android:textSize="14dp"
+        android:layout_marginStart="10dp"
+        android:paddingRight="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#808080"
+        tools:text="8:48AM" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="@dimen/space_avg"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

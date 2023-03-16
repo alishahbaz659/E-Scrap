@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/escraplogo"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_forgot_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_login"
+            android:text="Login"
+            android:textColor="#FFF"
+            android:textStyle="bold"></Button>
+
+        <LinearLayout
+            android:id="@+id/layout_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/clearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="Facebook"
+                android:textColor="#FFF" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_gmail_signin"
+                android:layout_width="150dp"
+                app:isDarkTheme="true"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp">
+            </com.google.android.gms.common.SignInButton>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Welcome back!"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Log in to your existant account of E-Scrap"
+            android:textColor="#808080"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Or connect using"
+            android:textColor="#808080"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="Forgot Password?">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/btn_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/dont_have_an_account"
+            android:textColor="#808080"
+            android:textSize="16dp"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/email_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edt_userEmail"
+                android:layout_width="347dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/txt2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="abc@example.com"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/password_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="347dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/txt2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="10dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

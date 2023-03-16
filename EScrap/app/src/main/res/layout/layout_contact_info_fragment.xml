@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_round_box">
+
+        <CheckBox
+            android:id="@+id/checkbox_show_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:text="Show this email on contact info"></CheckBox>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/edt_phone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_round_box"
+            android:hint="Email"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:textColor="#000000"></EditText>
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:inputType="phone"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle_round_box"
+            android:hint="Enter phone number here"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"></EditText>
+
+        <TextView
+            android:id="@+id/txt_differentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_show_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/use_diffrent_mail"
+            android:textColor="#0000FF"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter your contact info here"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="100dp"
+            android:text="Hello,\nWelcome to EScrap"
+            android:textColor="#000000"
+            android:textSize="22dp"></TextView>
+
+
+        <View
+            android:id="@+id/v1"
+            style="@style/proifleDetailsView"
+            android:layout_below="@id/t1"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rounded_button_next_back"
+            android:text="Back"
+            android:textColor="#FFF"></Button>
+
+        <Button
+            android:id="@+id/btn_go_next"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rounded_button_next_back"
+            android:text="Next"
+            android:textColor="#FFF"></Button>
+
+
+    </RelativeLayout>
+</LinearLayout>

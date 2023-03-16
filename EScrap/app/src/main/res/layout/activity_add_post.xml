@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AddPostActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_addDog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="Add a Post"
+                android:textColor="#11a63d"
+                android:textSize="24dp"></TextView>
+
+   <LinearLayout
+       android:id="@+id/l1"
+       android:orientation="horizontal"
+       android:layout_below="@id/txt_addDog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:layout_centerHorizontal="true">
+
+       <CheckBox
+           android:layout_width="160dp"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="20dp"
+           android:id="@+id/checkbox_select_single"
+           android:background="@drawable/rectangle_round_box"
+           android:padding="15dp"
+           android:paddingLeft="20dp"
+           android:gravity="center"
+           android:paddingStart="20dp"
+           android:text="Single"></CheckBox>
+       <CheckBox
+           android:id="@+id/checkbox_select_multiple"
+           android:layout_width="160dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="Multiple"
+           android:paddingStart="20dp"
+           android:background="@drawable/rectangle_round_box"
+           android:padding="15dp"
+           android:paddingLeft="20dp"></CheckBox>
+</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/l1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_corners_shade_box"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_select_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                   android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_baseline_add_a_photo_24"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="20dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/selected_image_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="No Image Selected"
+                    android:paddingStart="20dp"
+                    android:textColor="#000000"
+                    android:paddingLeft="20dp"></TextView>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_caption"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Caption"
+                android:textColor="#000000"
+                android:autoSizeTextType="uniform"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_caption"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_caption"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_round_box"
+                android:hint="Enter caption"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+            <TextView
+                android:id="@+id/txt_productType"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_caption"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Product Type"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_productType"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_productType"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_round_box"
+                android:hint="Enter product Category"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+            <TextView
+                android:id="@+id/txt_manufacturingdate"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_productType"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Manufacturing date"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                 />
+
+            <EditText
+                android:id="@+id/edt__manufacturingdate"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_manufacturingdate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_round_box"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+
+            <TextView
+                android:id="@+id/txt_expiry"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt__manufacturingdate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Enter Expiry Date(optional)"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/edt_expirydate"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_expiry"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_round_box"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"></EditText>
+
+            <TextView
+                android:id="@+id/txt_brief_history"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_expirydate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Brief History (optional)"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_brief"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/txt_brief_history"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:gravity="top|left"
+                android:paddingTop="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle_round_box"
+                android:hint="Add a brief description"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"></EditText>
+
+            <TextView
+                android:id="@+id/txt_warranty"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_brief"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Warranty"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_warranty"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radio_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/radio_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"></RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/txt_Avaialability"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Availability"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_availability_lend"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_Avaialability"
+             android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:text="Available for lend"></CheckBox>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_availability_lend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="50dp"
+                    android:paddingStart="10dp"
+                    android:text="Price range"></TextView>
+                <EditText
+                    android:id="@+id/lending_price"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="0$"
+                    android:paddingStart="20dp"
+                    android:inputType="number"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/rectangle_round_box"
+                    android:padding="15dp"
+                    android:paddingLeft="20dp"></EditText>
+
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkbox_availability_sale"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:text="Available for sale"></CheckBox>
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkbox_availability_sale"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#000000"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="50dp"
+                    android:paddingStart="10dp"
+                    android:text="Price range"></TextView>
+                <EditText
+                    android:id="@+id/edt_sale_price"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="0$"
+                    android:paddingStart="20dp"
+                    android:layout_weight="1.5"
+                    android:inputType="number"
+                    android:background="@drawable/rectangle_round_box"
+                    android:padding="15dp"
+                    android:paddingLeft="20dp"></EditText>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button_login"
+                android:text="Post"
+                android:layout_below="@id/l4"
+                android:textColor="#FFF"></Button>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/btn_post"></Space>
+
+        </RelativeLayout>
+
+</ScrollView>

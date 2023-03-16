@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/usercover"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txt_post_caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_image"
+                android:text="caption"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/txt_post_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_image"
+                android:text="Contact"
+                android:gravity="right"
+                android:visibility="gone"
+                android:textColor="@color/dark_blue"
+                android:paddingRight="30dp"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/post_product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="category"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/nothing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/post_product_manufacturing_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manufacturing Date(28/12/1999)"
+                android:textSize="16dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/post_txt_availableforlending"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/l1"
+                android:text="Available for lending"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:padding="6dp"
+                android:paddingStart="8dp"
+                android:background="@drawable/ticket_chip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"></TextView>
+            <TextView
+                android:id="@+id/nothing1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:textSize="16dp"></TextView>
+            <TextView
+                android:id="@+id/post_txt_availableforsale"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/l1"
+                android:text="Available for sale"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:padding="6dp"
+                android:paddingStart="8dp"
+                android:background="@drawable/ticket_chip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txt_post_lending_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lending $60"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/nothing4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/txt_post_sale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sale 0$"
+                android:textSize="16dp"></TextView>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_request"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2_owner"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_button_login"
+            android:text="REQUEST"
+            android:textColor="#FFF"></Button>
+
+        <CheckBox
+            android:id="@+id/t2_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1_lending"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_round_box"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:text="Ownership"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/t1_lending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_request"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_round_box"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:text="Lending"></CheckBox>
+
+        <TextView
+            android:id="@+id/txt_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/l4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="Brief History"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_brief_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_brief"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad
+Lorem ipsum dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et
+"
+            android:textColor="#000000"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_brief_history"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Request For"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

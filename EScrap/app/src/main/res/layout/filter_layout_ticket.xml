@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Filter"
+            android:id="@+id/txt_filter"
+            android:textColor="#000000"
+            android:textSize="26dp"
+            android:textStyle="bold"></TextView>
+
+        <CheckBox
+            android:id="@+id/checkbox_availability_adoption"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_filter"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Available for Lending"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkbox_availability_breed"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/checkbox_availability_adoption"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Available for Sale"></CheckBox>
+
+        <TextView
+            android:id="@+id/txt_breedType"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox_availability_breed"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Breed Type"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_breedType"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_breedType"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_round_box"
+            android:hint="Enter product type"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"></EditText>
+        <TextView
+            android:id="@+id/txt_area"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_breedType"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:text="Area Radius"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_area_radius"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_area"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_round_box"
+            android:hint="Enter area radius"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"></EditText>
+
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_area_radius"
+            android:layout_marginTop="15dp"
+            android:text="Warranty"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_age"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_age"
+            android:background="@drawable/rectangle_round_box"
+            android:hint="DD/MM/YYYY"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"></EditText>
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_age"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Warranty"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_gender"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"></RadioButton>
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"></RadioButton>
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/reset_choices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:paddingRight="10dp"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l5"
+            android:layout_centerHorizontal="true"
+            android:text="Done"
+            android:layout_marginTop="15dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFF"
+            android:background="@drawable/rounded_button_login"
+            ></Button>
+
+    </RelativeLayout>
+</LinearLayout>

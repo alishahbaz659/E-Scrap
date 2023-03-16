@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EScrap</string>
+    <string name="use_diffrent_mail"><u>Use different email</u></string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_key">AIzaSyCspwimsU14pSIBzbDHIRAU37TodLPDqfc</string>
+    <string name="already_have_an_account">Already have an account? <font color='#11a63d'>Login</font></string>
+    <string name="dont_have_an_account">Don\'t have an account? <font color='#11a63d'>Signup</font></string>
+</resources>

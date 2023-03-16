@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Hello,\nWelcome to the EScrap"
+            android:textColor="#000000"
+            android:textSize="22dp"></TextView>
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Please, tell us about yourself"
+            android:textSize="16dp"></TextView>
+
+        <View
+            android:id="@+id/v1"
+            style="@style/proifleDetailsView"
+            android:layout_below="@id/t1"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <CheckBox
+            android:id="@+id/t1_productOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/are_you"
+            android:layout_marginEnd="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_round_box"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:text="Product Owner"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/t2_productSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1_productOwner"
+            android:layout_marginEnd="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_round_box"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:text="Product Seller"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/t3_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2_productSeller"
+            android:layout_marginEnd="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_round_box"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:text="General"></CheckBox>
+
+        <TextView
+            android:id="@+id/are_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Are you a..."
+            android:textSize="16dp"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/btn_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rounded_button_next_back"
+            android:text="Back"></Button>
+
+        <Button
+            android:id="@+id/btn_go_next"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rounded_button_next_back"
+            android:text="NexT"></Button>
+
+
+    </RelativeLayout>
+</LinearLayout>
